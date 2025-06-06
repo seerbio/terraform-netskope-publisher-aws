@@ -31,13 +31,25 @@ resource "aws_instance" "NPAPublisher" {
   monitoring                  = var.aws_monitoring
   ebs_optimized               = var.ebs_optimized
 
-  tags = {
-    "Name" = var.publisher_name
-  }
+  tags = merge(
+    var.tags,
+    {
+      "Name" = var.publisher_name
+    }
+  )
   
   metadata_options {
     http_endpoint               = var.http_endpoint
     http_tokens                 = var.http_tokens
+  }
+
+  root_block_device {
+    tags = merge(
+      var.tags,
+      {
+        "Name" = var.publisher_name
+      }
+    )
   }
 
 
