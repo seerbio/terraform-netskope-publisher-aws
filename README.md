@@ -105,7 +105,7 @@ No modules.
 | <a name="input_ami_id"></a> [ami\_id](#input\_ami\_id) | Publisher AMI ID - Latest will be used if this is not speciified. | `string` | `""` | no |
 | <a name="input_associate_public_ip_address"></a> [associate\_public\_ip\_address](#input\_associate\_public\_ip\_address) | Publisher Assigned Public IP or Not | `bool` | `false` | no |
 | <a name="input_aws_instance_type"></a> [aws\_instance\_type](#input\_aws\_instance\_type) | AWS Instance Type - t3.medium is the reccomended instance size. | `string` | `"t3.medium"` | no |
-| <a name="input_aws_key_name"></a> [aws\_key\_name](#input\_aws\_key\_name) | AWS SSH Key Name | `string` | n/a | yes |
+| <a name="input_aws_key_name"></a> [aws\_key\_name](#input\_aws\_key\_name) | AWS SSH Key Name | `string` | "" | no |
 | <a name="input_aws_monitoring"></a> [aws\_monitoring](#input\_aws\_monitoring) | Enable Detailed Monitoring of AWS Instance | `bool` | `true` | no |
 | <a name="input_aws_security_group"></a> [aws\_security\_group](#input\_aws\_security\_group) | AWS Security Group Id | `string` | n/a | yes |
 | <a name="input_aws_subnet"></a> [aws\_subnet](#input\_aws\_subnet) | AWS Subnet Id | `string` | n/a | yes |

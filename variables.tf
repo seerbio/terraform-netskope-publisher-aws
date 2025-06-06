@@ -30,6 +30,7 @@ variable "ebs_optimized" {
 variable "aws_key_name" {
   description = "AWS SSH Key Name"
   type        = string
+  default     = ""
 }
 
 variable "aws_subnet" {
