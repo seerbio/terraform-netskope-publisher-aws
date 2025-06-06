@@ -73,7 +73,13 @@ variable "use_ssm" {
 }
 
 variable "tags" {
-  description = "Additonal tags to apply to the EC2 instance"
+  description = "Additional tags to apply to the EC2 instance"
   type        = map(string)
   default     = {}
+}
+
+variable "encrypted" {
+  description = "Encrypt the EBS root volume"
+  type        = bool
+  default     = false
 }

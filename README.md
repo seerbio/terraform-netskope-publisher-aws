@@ -116,6 +116,7 @@ No modules.
 | <a name="input_publisher_name"></a> [publisher\_name](#input\_publisher\_name) | Publisher Name | `string` | n/a | yes |
 | <a name="input_use_ssm"></a> [use\_ssm](#input\_use\_ssm) | Use SSM to Register Publisher - Use if http\_tokens set to required - Must include IAM Instance Profile if used | `bool` | `false` | no |
 | <a name="input_tags"></a> [tags](#input\_tags) | Optional additional tags to apply to the EC2 instance and attached EBS volume | `map(string)` | `{}` | no |
+| <a name="input_encrypted"></a> [encrypted](#input\_encrypted) | Enable encryption of the EBS root volume | `bool` | `false` | no |
 
 ## Outputs
 

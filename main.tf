@@ -44,6 +44,7 @@ resource "aws_instance" "NPAPublisher" {
   }
 
   root_block_device {
+    encrypted = var.encyrpted
     tags = merge(
       var.tags,
       {
