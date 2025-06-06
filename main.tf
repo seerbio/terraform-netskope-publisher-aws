@@ -43,6 +43,15 @@ resource "aws_instance" "NPAPublisher" {
     http_tokens                 = var.http_tokens
   }
 
+  root_block_device {
+    tags = merge(
+      var.tags,
+      {
+        "Name" = var.publisher_name
+      }
+    )
+  }
+
 
 }
 
