@@ -71,3 +71,9 @@ variable "use_ssm" {
   type        = bool
   default     = false
 }
+
+variable "tags" {
+  description = "Additonal tags to apply to the EC2 instance"
+  type        = map(string)
+  default     = {}
+}
