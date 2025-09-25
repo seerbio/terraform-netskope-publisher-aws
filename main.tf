@@ -27,7 +27,7 @@ resource "aws_instance" "NPAPublisher" {
   key_name                    = var.aws_key_name
   subnet_id                   = var.aws_subnet
   vpc_security_group_ids      = [var.aws_security_group]
-  user_data                   = "${var.use_ssm == true ? "" : netskope_publishers.Publisher.token}" 
+  user_data_base64            = "${var.use_ssm == true ? "" : netskope_publishers.Publisher.token}" 
   monitoring                  = var.aws_monitoring
   ebs_optimized               = var.ebs_optimized
 
